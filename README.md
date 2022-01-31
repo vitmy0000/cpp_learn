@@ -21,6 +21,7 @@ vagrant up
 Setup SSH forward [link](https://wildlyinaccurate.com/using-ssh-agent-forwarding-with-vagrant/)
 
 * On host machine:
+
   * Make sure the host can access github
 
   ```bash
