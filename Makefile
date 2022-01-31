@@ -9,5 +9,8 @@ hello_OBJS = hello.o
 hello: $(hello_OBJS)
 	$(CXX) $(CXXFLAGS) $(hello_OBJS) -o main
 
+run:
+	./main
+
 clean:
 	rm -f *.o main
