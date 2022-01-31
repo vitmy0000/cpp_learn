@@ -56,3 +56,17 @@ Setup SSH forward [link](https://wildlyinaccurate.com/using-ssh-agent-forwarding
   vagrant reload
   vagrant ssh
   ```
+
+### Clang, Make
+
+Install Clang
+
+```bash
+sudo apt install clang
+```
+
+Install Make
+
+```bash
+sudo apt install make
+```
