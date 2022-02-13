@@ -49,12 +49,10 @@ Setup SSH forward [link](https://wildlyinaccurate.com/using-ssh-agent-forwarding
   config.ssh.forward_agent = true
   ```
 
-  * Exit, reload and reconnect VM:
+  * Reload on host:
 
   ```bash
-  exit
   vagrant reload
-  vagrant ssh
   ```
 
 ### Clang, Make
