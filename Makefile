@@ -15,5 +15,9 @@ function_overload: function_overload.o
 
 auto_type: auto_type.o
 	$(CXX) $(CXXFLAGS) auto_type.o -o main
+
+inheritance: inheritance.o
+	$(CXX) $(CXXFLAGS) inheritance.o -o main
+
 clean:
 	rm -f *.o main
