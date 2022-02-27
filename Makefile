@@ -13,5 +13,7 @@ literal_type: literal_type.o
 function_overload: function_overload.o
 	$(CXX) $(CXXFLAGS) function_overload.o -o main
 
+auto_type: auto_type.o
+	$(CXX) $(CXXFLAGS) auto_type.o -o main
 clean:
 	rm -f *.o main
