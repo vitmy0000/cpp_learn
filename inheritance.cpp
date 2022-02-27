@@ -6,6 +6,11 @@ class A {
   virtual void DoFoo() const {
     std::cout << "A do foo" << std::endl;
   }
+  void DoBar() const {
+    std::cout << "val: " << val_ << std::endl;
+    std::cout << "A do bar" << std::endl;
+    DoFoo();
+  }
   virtual ~A() = default;
 
  private:
@@ -18,12 +23,9 @@ class SubA : public A {
     std::cout << "SubA do foo" << std::endl;
   }
   virtual ~SubA() = default;
-
- private:
-  int val_;
 };
 
 int main() {
   std::shared_ptr<A> a = std::make_shared<SubA>();
-  a->DoFoo();
+  a->DoBar();
 }
