@@ -85,8 +85,13 @@ void bar(MyString) {
   std::cout << "bar" << std::endl;
 }
 
+MyString bax() {
+  MyString s("abcd");
+  return s;
+}
+
 int main(int argc, char* argv[]) {
-  MyString s1("abcd");
+  MyString s1 = bax();
 
   std::cout << "===== foo =====" << std::endl;
   foo(s1);               // const ref

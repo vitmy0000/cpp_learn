@@ -19,5 +19,8 @@ auto_type: auto_type.o
 inheritance: inheritance.o
 	$(CXX) $(CXXFLAGS) inheritance.o -o main
 
+pimpl: pimpl/widget.o pimpl/main.o
+	$(CXX) $(CXXFLAGS) pimpl/widget.o pimpl/main.o -o main
+
 clean:
 	rm -f *.o main

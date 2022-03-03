@@ -35,7 +35,7 @@ Setup SSH forward [link](https://wildlyinaccurate.com/using-ssh-agent-forwarding
       ForwardAgent yes
   ```
 
-  * Run command:
+  * Run command (may need to rerun after host restart):
 
   ```bash
   ssh-add
