@@ -23,4 +23,4 @@ pimpl: pimpl/widget.o pimpl/main.o
 	$(CXX) $(CXXFLAGS) pimpl/widget.o pimpl/main.o -o main
 
 clean:
-	rm -f *.o main
+	find . -type f -name '*.o' -delete
