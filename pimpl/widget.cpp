@@ -32,6 +32,6 @@ bool Widget::Shown() const {
 }
 Widget::Widget() = default;
 Widget::Widget(int num) : widget_impl_{std::make_unique<WidgetImpl>(num)} {}
-Widget::Widget(Widget&&) = default;
 Widget::~Widget() = default;
+Widget::Widget(Widget&&) = default;
 Widget& Widget::operator=(Widget&&) = default;
