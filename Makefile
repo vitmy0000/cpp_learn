@@ -1,7 +1,7 @@
 CXX = clang++
 CXXFLAGS = -std=c++17
 
-%.o: %.cpp
+%.o: %.cc
 	$(CXX) $(CXXFLAGS) -c $^ -o $@
 
 hello: hello.o
